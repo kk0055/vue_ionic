@@ -6,7 +6,7 @@
       </ion-button>
     </template>
     <ion-list v-for="memory in memories" :key="memory.id" 
-    :route-link="`/memories/${memory.id}`">
+    :router-link="`/memories/${memory.id}`">
     {{ memory.title }}
     </ion-list>
     <!-- <memories-list :memories="memories"></memories-list> -->
@@ -14,23 +14,25 @@
 </template>
 
 <script>
-import { ionList, IonButton, IonIcon } from "@ionic/vue";
+import { IonList, IonButton, IonIcon } from "@ionic/vue";
 
 export default {
   components: {
     IonButton,
     IonIcon,
-    ionList
+    IonList
   },
   data() {
     return {
       memories: [
-        {id: '1', 
+        {
+        id: '1', 
         image: 'https://images.pexels.com/photos/4913371/pexels-photo-4913371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         title: 'A trip into the mountains',
         description: 'It was a really nice trip' 
         },
-         {id: 'm2', 
+         {
+         id: 'm2', 
          image:'https://images.pexels.com/photos/4913371/pexels-photo-4913371.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         title: 'A trip into the mountains',
         description: 'It was a really nice trip' 
