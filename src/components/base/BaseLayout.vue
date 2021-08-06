@@ -7,7 +7,7 @@
            
           ></ion-back-button>
         </ion-buttons>
-        <ion-title></ion-title>
+       <ion-title>{{ pageTitle }}</ion-title>
         <ion-buttons >
         
         </ion-buttons>
@@ -29,6 +29,7 @@ import {
   IonBackButton,
   IonButtons,
 } from "@ionic/vue";
+
 export default {
   props: ["pageTitle", "pageDefaultBackLink"],
   components: {

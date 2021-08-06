@@ -1,33 +1,21 @@
 <template>
-  <div>
-    <ion-page>  
-     <ion-header>   
-       <ion-toolbar>  
-       <ion-title>All memories </ion-title>
-         </ion-toolbar>
-       </ion-header> 
-       <ion-content> 
-         <ion-list> 
-           <ion-item> Max </ion-item>
-           <ion-item> Max </ion-item>
-          
-         </ion-list> 
-      </ion-content> 
-    </ion-page>
-  </div>
+  <base-layout page-title="All Memories">
+    <template v-slot:actions-end>
+      <ion-button router-link="/memories/add">
+        <ion-icon slot="icon-only" :icon="add"></ion-icon>
+      </ion-button>
+    </template>
+    <memories-list :memories="memories"></memories-list>
+  </base-layout>
 </template>
 
 <script>
-import {IonPage, IonHeader, IonToolbar, IonList, IonItem, IonTitle, IonContent} from '@ionic/vue'
+import { IonButton, IonIcon } from "@ionic/vue";
+
 export default {
   components: {
-    IonPage,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    IonList,
-    IonItem
+    IonButton,
+    IonIcon
   }
 }
 </script>
