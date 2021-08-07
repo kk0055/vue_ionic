@@ -1,9 +1,7 @@
 <template>
   <ion-item :router-link="`/memories/${memory.id}`">
-    <ion-thumbnail >
-      <template v-slot:start>
+    <ion-thumbnail slot="start">
       <ion-img :src="memory.image" :alt="memory.title"></ion-img>
-       </template>
     </ion-thumbnail>
     <ion-label>
       {{ memory.title }}
