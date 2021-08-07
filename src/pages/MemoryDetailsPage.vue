@@ -15,7 +15,11 @@
 </template>
 
 <script>
+import MemoryOverview from '../components/memories/MemoryOverview.vue';
 export default {
+  components: {
+    MemoryOverview
+  },
   data() {
     return {
       memoryId:this.$route.params.id
