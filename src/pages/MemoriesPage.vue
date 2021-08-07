@@ -24,6 +24,7 @@ export default {
   },
 computed: {
   memories() {
+    //store/index.jsから取得
     return this.$store.getters.memories;
   }
 }

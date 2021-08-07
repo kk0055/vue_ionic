@@ -22,11 +22,17 @@ const store = createStore({
   getters: {
     memories(state) {
       return state.memories;
-    }
+    },
+    memory(state) {
+      return (memoryId) => {
+        //memoriesからmemoryIdと一致するものを取得
+        return state.memories.find(memory => memory.id === memoryId)
+      };
+  },
+  
   }
 }
  
-
 );
 
 export default store

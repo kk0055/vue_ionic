@@ -10,6 +10,20 @@
 
 <script>
 export default {
-  
+  data() {
+    return {
+      memodyId:null
+    }
+  },
+  computed: {
+      loadedMemory() {
+        return this.$store.getters.memory();
+      }
+  },
+  watch: {
+    '$route'(currentRoute) {
+      this.memodyId = currentRoute.params.id
+    }
+  }
 }
 </script>
