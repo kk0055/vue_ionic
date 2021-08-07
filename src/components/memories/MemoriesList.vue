@@ -1,6 +1,7 @@
 
 <template>
   <ion-list>
+    <!-- :memoryのキーをMemoryListItemのpropsから取得 -->
     <memory-list-item
       v-for="memory in memories"
       :key="memory.id"
