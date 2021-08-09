@@ -12,6 +12,7 @@ export default {
   },
   methods: {
     saveMemory(memoryData) {
+      //vueXのaddMemory mutationsをディスパッチ
       this.$store.dispatch('addMemory', memoryData);
       this.$router.replace('/memories');
     }

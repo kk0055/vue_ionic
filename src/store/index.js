@@ -32,7 +32,10 @@ const store = createStore({
        }
   },
   actions: {
-
+    addMemory(context, memoryData) {
+      //addMemoryミューテーションをコミット
+      context.commit('addMemory', memoryData);
+    }
   },
   getters: {
     memories(state) {
