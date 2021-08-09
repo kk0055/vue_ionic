@@ -8,8 +8,8 @@
           ></ion-back-button >
         </ion-buttons>
        <ion-title>{{ pageTitle }}</ion-title>
-        <ion-buttons >
-        
+           <ion-buttons slot="end">
+          <slot name="actions-end"></slot>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>

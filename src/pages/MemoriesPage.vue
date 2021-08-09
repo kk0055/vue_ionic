@@ -12,6 +12,7 @@
 
 <script>
 import { IonButton, IonIcon } from "@ionic/vue";
+import { add } from "ionicons/icons";
 
 import MemoriesList from "../components/memories/MemoriesList.vue";
 export default {
@@ -19,6 +20,9 @@ export default {
     IonButton,
     IonIcon,
     MemoriesList
+  },
+    data() {
+    return { add };
   },
 computed: {
   memories() {
