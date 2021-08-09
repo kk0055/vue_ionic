@@ -37,7 +37,9 @@ import {
 import { camera } from 'ionicons/icons';
 import { Plugins, CameraResultType, CameraSource } from '@capacitor/core';
 const { Camera } = Plugins;
+
 export default {
+  //AddMemoryPageにemit
   emits: ["save-memory"],
   components: {
     IonList,
@@ -68,10 +70,12 @@ export default {
     },
     submitForm() {
       const memoryData = {
+        //v-mdelでバインディング
         title: this.enteredTitle,
         imageUrl: this.takenImageUrl,
         description: this.enteredDescription,
       };
+        //AddMemoryPageにemit
       this.$emit("save-memory", memoryData);
     },
   },

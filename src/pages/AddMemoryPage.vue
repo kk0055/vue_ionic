@@ -14,6 +14,7 @@ export default {
     saveMemory(memoryData) {
       //vueXのaddMemory mutationsをディスパッチ
       this.$store.dispatch('addMemory', memoryData);
+      //memoriesPageへ
       this.$router.replace('/memories');
     }
   }
