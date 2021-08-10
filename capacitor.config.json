@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "ionic",
-	"webDir": "dist",
-	"bundledWebRuntime": false
+  "appId": "com.kk0055",
+  "appName": "VueMemories",
+  "webDir": "public",
+  "bundledWebRuntime": false
 }
