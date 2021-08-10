@@ -5,7 +5,12 @@
 <script>
 export default {
   name: "Product",
-  props: ["name"],
+  props:  {
+    name: {
+      type: String,
+      default: "デフォルト",
+    },
+  },
 };
 </script>
 
