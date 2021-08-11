@@ -25,6 +25,12 @@ const store = createStore({
       ],
       message: 'Hello Vuex from store',
       messageComp: 'Hello Vuex from Components',
+      messageComputed: 'Hello Vuex from Computed',
+      usersObj:[
+        {name: 'Obj from vuex', email:'john@example.com', age:22},
+        {name: 'Obj from vuex', email: 'merry@facebook.com',age:33},
+        {name: 'Obj from vuex', email: 'ken@amazon.com',age:29}
+      ]
     };
   },
   mutations: {
