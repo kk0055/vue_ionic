@@ -23,6 +23,10 @@ const routes = [
     path: '/practice',
     component: () => import('../practice/Parent.vue')
   },
+  {
+    path: '/vuex',
+    component: () => import('../practice/vuex/App.vue')
+  },
 
 ]
 

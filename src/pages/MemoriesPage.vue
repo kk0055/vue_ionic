@@ -1,5 +1,6 @@
 <template>
   <base-layout page-title="All Memories">
+  <!-- v-slotでBaseLayoutから+ボタン取得 -->
     <template v-slot:actions-end>
       <ion-button router-link="/memories/add">
         <ion-icon slot="icon-only" :icon="add"></ion-icon>
