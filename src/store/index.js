@@ -22,7 +22,9 @@ const store = createStore({
          title: 'A beautiful ocean',
          description: 'It was a really nice ocean' 
          },
-      ]
+      ],
+      message: 'Hello Vuex from store',
+      messageComp: 'Hello Vuex from Components',
     };
   },
   mutations: {
