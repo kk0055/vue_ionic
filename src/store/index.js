@@ -30,7 +30,8 @@ const store = createStore({
         {name: 'Obj from vuex', email:'john@example.com', age:22},
         {name: 'Obj from vuex', email: 'merry@facebook.com',age:33},
         {name: 'Obj from vuex', email: 'ken@amazon.com',age:29}
-      ]
+      ],
+      count:0
     };
   },
   mutations: {
@@ -43,7 +44,10 @@ const store = createStore({
           };
 
           state.memories.unshift(newMemory);
-       }
+       },
+       increment : function(state) {
+        state.count++
+      }
   },
   actions: {
     addMemory(context, memoryData) {

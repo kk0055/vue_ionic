@@ -4,15 +4,19 @@
     <h1>{{ $store.state.message }}</h1>
      <HelloVuex></HelloVuex>
        <br/>
-    <h1>{{ computed }}</h1>
+    <p>{{ computed }}</p>
        <br/>
       <!-- dataからとVuexから取得 -->
      <UserList v-bind:users="users"></UserList>
+<br/>
+    <h1>Increment</h1>
+     <Mutations/>
   </div>
 </template>
 <script>
 import HelloVuex from './components/HelloVuex.vue'
 import UserList from './components/UserList.vue'
+import Mutations from './components/Mutations.vue'
 
 export default {
   name: 'app',
@@ -28,7 +32,8 @@ export default {
   },
   components: {
     HelloVuex,
-    UserList
+    UserList,
+    Mutations
   },
   computed: {
     computed : function(){
