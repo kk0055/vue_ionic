@@ -61,6 +61,9 @@ const store = createStore({
         return state.memories.find(memory => memory.id === memoryId)
       };
   },
+  usergetters(state){
+    return state.usersObj.filter(user => user.age < 30);
+  }
   
   }
 }

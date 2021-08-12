@@ -6,9 +6,8 @@
        <br/>
     <h1>{{ computed }}</h1>
        <br/>
+      <!-- dataからとVuexから取得 -->
      <UserList v-bind:users="users"></UserList>
-      <br/>
-     <UserList ></UserList>
   </div>
 </template>
 <script>
