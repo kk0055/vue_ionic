@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1>{{ message }}</h1>
-    <h1>{{ $store.state.message }}</h1>
+    <!-- <h1>{{ message }}</h1> -->
+    <!-- <h1>{{ $store.state.message }}</h1> -->
      <HelloVuex></HelloVuex>
        <br/>
     <p>{{ computed }}</p>

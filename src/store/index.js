@@ -45,9 +45,9 @@ const store = createStore({
 
           state.memories.unshift(newMemory);
        },
-       increment : function(state) {
-        state.count++
-      }
+       increment : function(state, number) {
+        state.count = state.count + number
+      },
   },
   actions: {
     addMemory(context, memoryData) {

@@ -2,6 +2,7 @@
   <div id="app">
     <p><button v-on:click="increment">UP</button></p>
     <h1>Count:{{ count }}</h1>
+
   </div>
 </template>
 
@@ -12,8 +13,9 @@ export default {
     increment: function () {
       //stateの更新を行うためには、mutations(ミューテーション)を使う
       //mutationsはcommitを使って実行
-      this.$store.commit("increment");
+      this.$store.commit("increment",50);
     },
+
   },
   computed: {
     count: function () {
